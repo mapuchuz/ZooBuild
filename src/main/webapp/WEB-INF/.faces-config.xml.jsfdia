@@ -6,8 +6,13 @@
    PATH="/index.xhtml" model-entity="JSFProcessItem">
    <PROCESS-ITEM-OUTPUT ID="animaux::#animaux.xhtml" NAME="output"
     PATH="/animaux.xhtml" TARGET="rules:#animaux.xhtml" TITLE="animaux" model-entity="JSFProcessItemOutput"/>
+   <PROCESS-ITEM-OUTPUT ID="addAnimal::#addAnimal.xhtml" NAME="output1"
+    PATH="/addAnimal.xhtml" TARGET="rules:#addAnimal.xhtml"
+    TITLE="addAnimal" model-entity="JSFProcessItemOutput"/>
   </PROCESS-ITEM>
  </PROCESS-ITEM>
  <PROCESS-ITEM NAME="rules:#animaux.xhtml" PATH="/animaux.xhtml"
   SHAPE="109,231,0,0" model-entity="JSFProcessGroup" persistent="true"/>
+ <PROCESS-ITEM NAME="rules:#addAnimal.xhtml" PATH="/addAnimal.xhtml"
+  SHAPE="488,154,0,0" model-entity="JSFProcessGroup" persistent="true"/>
 </PROCESS>

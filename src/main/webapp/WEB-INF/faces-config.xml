@@ -24,6 +24,10 @@
    <from-outcome>animaux</from-outcome>
    <to-view-id>/animaux.xhtml</to-view-id>
   </navigation-case>
+  <navigation-case>
+   <from-outcome>addAnimal</from-outcome>
+   <to-view-id>/addAnimal.xhtml</to-view-id>
+  </navigation-case>
  </navigation-rule>
  <application/>
 </faces-config>

@@ -33,9 +33,6 @@ public class Animal {
 		this.photo = photo;
 	}
 
-	public void setNom(String nom) {
-		this.name = nom;
-	}
 
 	public String getDescription() {
 		return description;
@@ -67,6 +64,14 @@ public class Animal {
 
 	public void setEspece(String espece) {
 		this.espece = espece;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 }

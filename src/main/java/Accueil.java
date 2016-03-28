@@ -19,5 +19,7 @@ public class Accueil {
 	public String visites() {
 		return "visites";
 	}
-	
+	public String addAnimal() {
+		return "addAnimal";
+	}
 }

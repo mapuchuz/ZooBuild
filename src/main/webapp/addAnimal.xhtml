@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+    xmlns:ui="http://java.sun.com/jsf/facelets"
+    xmlns:f="http://java.sun.com/jsf/core"
+    xmlns:h="http://java.sun.com/jsf/html"
+    template="WEB-INF/template/basic.xhtml">
+
+    <ui:define name="content">
+        <h1>A new animal comes into (not in) the Zoooo</h1>
+
+        <div>
+            <p>You may give a name, specie, description and photo.</p>
+            <h3>desciption is optional</h3>
+            <img src="resources/images/Porcs_de_race_Large-White.jpg" height="200" width="600"/>
+        </div>
+
+
+        <h:form id="reg">
+            <h2>Animal Registration</h2>
+         
+	   <h:panelGrid columns="3" >
+                <h:outputLabel for="name" value="Name:" />
+                <h:inputText id="name" value="#{newAnimal.name}" />
+                <h:message for="name" errorClass="invalid" />
+
+                <h:outputLabel for="specie" value="Espèce:" />
+                <h:inputText id="specie" value="#{newAnimal.espece}" />
+                <h:message for="specie" errorClass="invalid" />
+
+                <h:outputLabel for="photo" value="Photo:" />
+                <h:inputText id="photo"
+                    value="#{newAnimal.photo}" />
+                <h:message for="photo" errorClass="invalid" />
+            </h:panelGrid>
+
+            <p>
+                <h:panelGrid columns="2">
+                    <h:commandButton id="register"
+                        action="#{animalController.register}"
+                        value="Register" styleClass="register" />
+                    <h:messages styleClass="messages"
+                        errorClass="invalid" infoClass="valid"
+                        warnClass="warning" globalOnly="true" />
+                </h:panelGrid>
+            </p>
+        </h:form>
+
+
+
+
+    </ui:define>
+</ui:composition>
