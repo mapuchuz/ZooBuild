@@ -1,47 +1,74 @@
 package org.jee.zoo.model;
 
-import java.util.ArrayList;
-import java.util.List;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
-
+@Entity
 public class Enclos {
 
-	private String nom;
+	@Id
+	@GeneratedValue
+	private int id;
+
+	private String name;
+	
 	private String photo;
-	
-	private static List<Animal>animaux= new ArrayList<>();
-	
+
+	public Enclos() {
+
+	}
+
 	public Enclos(String nom) {
-		this.nom= nom;
+		this.name = nom;
 	}
+
 	public Enclos(String nom, String photo) {
-		this.nom= nom;
-		this.photo=	photo;
+		this.name = nom;
+		this.photo = photo;
 	}
-	public void add(Animal animal){
-		animaux.add(animal);
-	}
-	public void remove(Animal animal){
-		animaux.remove(animal);
-	}
-	public String getNom() {
-		return nom;
-	}
-	public void setNom(String nom) {
-		this.nom = nom;
-	}
+
+
 	public String getPhoto() {
 		return photo;
 	}
+
 	public void setPhoto(String photo) {
 		this.photo = photo;
 	}
-	public static List<Animal> getAnimaux() {
-		return animaux;
+
+	public int getId() {
+		return id;
 	}
-	public static void setAnimaux(List<Animal> animaux) {
-		Enclos.animaux = animaux;
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	
+
+	// private static List<Animal>animaux= new ArrayList<>();
+
+	// public void add(Animal animal){
+	// animaux.add(animal);
+	// }
+	// public void remove(Animal animal){
+	// animaux.remove(animal);
+	// }
+
+	// public static List<Animal> getAnimaux() {
+	// return animaux;
+	// }
+	// public static void setAnimaux(List<Animal> animaux) {
+	// Enclos.animaux = animaux;
+	// }
+
 }
