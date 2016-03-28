@@ -1,3 +1,4 @@
+package org.jee.zoo.data;
 
 
 import java.util.List;
@@ -9,6 +10,8 @@ import javax.enterprise.event.Reception;
 import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 import javax.inject.Named;
+
+import org.jee.zoo.model.Animal;
 
 
 @RequestScoped

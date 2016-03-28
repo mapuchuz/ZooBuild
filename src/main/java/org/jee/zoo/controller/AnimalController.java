@@ -1,3 +1,4 @@
+package org.jee.zoo.controller;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.inject.Model;
@@ -6,6 +7,9 @@ import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
+
+import org.jee.zoo.model.Animal;
+import org.jee.zoo.service.AnimalRegistration;
 
 
 // The @Model stereotype is a convenience mechanism to make this a request-scoped bean that has an

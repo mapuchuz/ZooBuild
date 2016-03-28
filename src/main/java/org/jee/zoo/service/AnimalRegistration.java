@@ -1,8 +1,12 @@
+package org.jee.zoo.service;
 
 import javax.ejb.Stateless;
 import javax.enterprise.event.Event;
 import javax.inject.Inject;
 import javax.persistence.EntityManager;
+
+import org.jee.zoo.model.Animal;
+
 import java.util.logging.Logger;
 
 
