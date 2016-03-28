@@ -1,0 +1,78 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<h:body>
+	<ui:composition template="WEB-INF/template/twopanes.xhtml">
+		<ui:define name="icigauche">
+			<h:form id="form1">
+				<p:growl id="messages" showDetail="true" sticky="true" escape="false" />
+			<h:form>
+				<p:growl id="messages" showDetail="false" />
+
+				<h3 style="margin-top: 0">Plain Menu</h3>
+				<p:menu>
+					<p:submenu label="Les enclos">
+						<p:menuitem value="ListeDesEnclos" actionListener="#{menuView.save}"
+							update="messages" icon="ui-icon-disk" />
+						<p:menuitem value="Update" actionListener="#{menuView.update}"
+							update="messages" icon="ui-icon-arrowrefresh-1-w" />
+					</p:submenu>
+					<p:submenu label="Détails d'un enclos">
+						<p:menuitem value="Contenu" actionListener="#{menuView.delete}"
+							update="messages" ajax="false" icon="ui-icon-close" />
+					</p:submenu>
+				</p:menu>
+
+				<p:commandButton action="#{enclosBean.refresh}"
+
+					value="Tous les Enclos par service"
+					update=":formulaireDeux:cibleAjaxDataGrid :form1:messages" />
+ 			</h:form>
+
+					value="Tous les Enclos par service" update=":recepteur:cibleAjax" />
+			</h:form>
+
+			<br />
+
+		</ui:define>
+		<ui:define name="icicentre">
+			<h:form id="formulaireDeux">
+
+					<p:dataGrid var="enclos" value="#{enclosBean.enclos}" columns="3"
+						layout="grid" rows="6" id="cibleAjaxDataGrid">
+						<f:facet name="header">
+			            Les Enclos du Zoo
+        				</f:facet>
+</p:dataGrid>
+</h:form>
+			<h:form id="recepteur">
+	
+					<p:dataGrid var="enclos" value="#{enclosBean.enclos}" columns="3"
+						layout="grid" rows="6" id="cibleAjax">
+						<f:facet name="header">
+            		Les Enclos du Zoo
+        			</f:facet>
+						<p:panel header="#{enclos.nom}" style="text-align:center">
+							<h:panelGrid columns="1" style="width:100%">
+								<p:graphicImage id="picZZ"
+									value="resources/images/#{enclos.nom}.jpg" width="200"
+									height="200" />
+								<h:outputText value="#{enclos.nom}" />
+
+							</h:panelGrid>
+						</p:panel>
+
+					</p:dataGrid>
+			</h:form>
+
+		</ui:define>
+
+	</ui:composition>
+</h:body>
+</html>
