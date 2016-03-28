@@ -1,0 +1,11 @@
+﻿INSERT INTO public.animal( id, description, espece, name, photo)     VALUES (3, '','coco', 'Ara', '330px-Ara_chloroptera.jpg' );
+INSERT INTO public.animal( id, description, espece, name, photo)     VALUES (4, '','buouaf', 'Buffle', '435px-BUFFALO159.JPG' );
+INSERT INTO public.animal( id, description, espece, name, photo)     VALUES (5, '','léo', 'Léopard', '435px-Snow_leopard_portrait-2010-07-09.jpg' );
+INSERT INTO public.animal( id, description, espece, name, photo)     VALUES (6, '','gor', 'Gorille', '450px-Gorilla_063.jpg' );
+INSERT INTO public.animal( id, description, espece, name, photo)     VALUES (7, '','kang', 'Kangourou', 'KANGOUROU240px-Wallaby_de_Bennett_JDP_2004.jpg' );
+INSERT INTO public.animal( id, description, espece, name, photo)     VALUES (8, '','cocoara', 'Ara', '330px-Ara_chloroptera.jpg' );
+INSERT INTO public.animal( id, description, espece, name, photo)     VALUES (9, '','buorrf', 'Buffle', '435px-BUFFALO159.JPG' );
+INSERT INTO public.animal( id, description, espece, name, photo)     VALUES (10, '','léopardo', 'Léopard', '435px-Snow_leopard_portrait-2010-07-09.jpg' );
+INSERT INTO public.animal( id, description, espece, name, photo)     VALUES (11, '','grillos', 'Gorille', '450px-Gorilla_063.jpg' );
+INSERT INTO public.animal( id, description, espece, name, photo)     VALUES (12, '','ourou', 'Kangourou', 'KANGOUROU240px-Wallaby_de_Bennett_JDP_2004.jpg' );
+INSERT INTO public.animal( id, description, espece, name, photo)     VALUES (13, '','djili', 'Kangourou', 'KANGOUROU240px-Wallaby_de_Bennett_JDP_2004.jpg' );
