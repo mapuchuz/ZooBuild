@@ -26,9 +26,19 @@ public class AnimalRepository {
         		cb.createQuery(Animal.class);
         Root<Animal> animal = criteria.from(Animal.class);
         criteria.select(animal).orderBy(cb.asc(animal.get("name")));
-        List<Animal>tata=  em.createQuery(criteria).getResultList();
+        List<Animal>tata=  em.createQuery(criteria)
+        		.getResultList();
         System.out.println("list animal: " + tata.size());
         return tata;
 //        return em.createQuery(criteria).getResultList();
 	}
+	
+	public Animal findByName(String name) {
+		return null;
+	}
+	
+	   public Animal findById(int id) {
+	        return em.find(Animal.class, id);
+	    }
+
 }
