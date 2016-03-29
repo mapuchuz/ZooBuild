@@ -12,6 +12,7 @@ import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
 import org.jee.zoo.model.Animal;
+import org.jee.zoo.model.AnimalReduced;
 
 
 @ApplicationScoped
@@ -33,6 +34,19 @@ public class AnimalRepository {
 //        return em.createQuery(criteria).getResultList();
 	}
 	
+	public List<AnimalReduced> findAllAnimalReduced() {
+        CriteriaBuilder cb = em.getCriteriaBuilder();
+        CriteriaQuery<AnimalReduced> criteria = 
+        		cb.createQuery(AnimalReduced.class);
+        Root<AnimalReduced> animal = criteria.from(AnimalReduced.class);
+        criteria.select(animal).orderBy(cb.asc(animal.get("name")));
+        List<AnimalReduced>tata=  em.createQuery(criteria)
+        		.getResultList();
+        System.out.println("list animal: " + tata.size());
+        return tata;
+//        return em.createQuery(criteria).getResultList();
+	}
+
 	public Animal findByName(String name) {
 		return null;
 	}

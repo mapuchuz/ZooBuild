@@ -42,6 +42,7 @@ import javax.ws.rs.core.Response;
 
 import org.jee.zoo.data.AnimalRepository;
 import org.jee.zoo.model.Animal;
+import org.jee.zoo.model.AnimalReduced;
 import org.jee.zoo.service.AnimalRegistration;
 
 /**
@@ -68,8 +69,11 @@ public class AnimalResourceRestService {
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
-	public List<Animal> listAllAnimals() {
-		return repository.findAllAnimal();
+//	public List<Animal> listAllAnimals() {
+//		return repository.findAllAnimal();
+//	}
+	public List<AnimalReduced> listAllAnimals() {
+		return repository.findAllAnimalReduced();
 	}
 
 	@GET
