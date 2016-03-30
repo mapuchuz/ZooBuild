@@ -9,7 +9,7 @@ import javax.inject.Inject;
 import javax.inject.Named;
 
 import org.jee.zoo.model.Animal;
-import org.jee.zoo.service.AnimalRegistration;
+import org.jee.zoo.service.IAnimalRegistration;
 
 
 // The @Model stereotype is a convenience mechanism to make this a request-scoped bean that has an
@@ -23,7 +23,7 @@ public class AnimalController {
     private FacesContext facesContext;
 
     @Inject
-    private AnimalRegistration animalRegistration;
+    private IAnimalRegistration animalRegistration;
 
     @Produces
     @Named

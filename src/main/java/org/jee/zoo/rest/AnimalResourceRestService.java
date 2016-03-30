@@ -40,10 +40,10 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.jee.zoo.data.AnimalRepository;
+import org.jee.zoo.data.IAnimalRepository;
 import org.jee.zoo.model.Animal;
 import org.jee.zoo.model.AnimalReduced;
-import org.jee.zoo.service.AnimalRegistration;
+import org.jee.zoo.service.IAnimalRegistration;
 
 /**
  * JAX-RS Example
@@ -62,10 +62,10 @@ public class AnimalResourceRestService {
 	private Validator			validator;
 
 	@Inject
-	private AnimalRepository	repository;
+	private IAnimalRepository	repository;
 
 	@Inject
-	AnimalRegistration			registration;
+	IAnimalRegistration			registration;
 
 	@GET
 	@Produces(MediaType.APPLICATION_JSON)
