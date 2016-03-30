@@ -1,4 +1,4 @@
-package org.jee.zoo.model;
+package org.jee.zoo.util;
 
 
 import javax.faces.bean.ManagedBean;

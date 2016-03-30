@@ -1,4 +1,4 @@
-package org.jee.zoo.data;
+package org.jee.zoo.animal.service;
 
 
 import java.util.List;
@@ -11,14 +11,15 @@ import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import org.jee.zoo.model.Animal;
+import org.jee.zoo.animal.data.IAnimalRepository;
+import org.jee.zoo.animal.model.Animal;
 
 
 @RequestScoped
 public class AnimalListProducer {
 
 	@Inject
-	AnimalRepository animalRepository;
+	IAnimalRepository animalRepository;
 	
 	private List<Animal> animals;
 	

@@ -1,4 +1,4 @@
-package org.jee.zoo.data;
+package org.jee.zoo.enclos.data;
 
 import java.util.List;
 
@@ -9,7 +9,7 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-import org.jee.zoo.model.Enclos;
+import org.jee.zoo.enclos.model.Enclos;
 
 @ApplicationScoped
 public class EnclosRepository {

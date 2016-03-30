@@ -1,6 +1,6 @@
-package org.jee.zoo.service;
+package org.jee.zoo.animal.service;
 
-import org.jee.zoo.model.Animal;
+import org.jee.zoo.animal.model.Animal;
 
 public interface IAnimalRegistration {
 

@@ -1,4 +1,4 @@
-package org.jee.zoo.model;
+package org.jee.zoo.animal.model;
 
 
 import javax.persistence.Entity;

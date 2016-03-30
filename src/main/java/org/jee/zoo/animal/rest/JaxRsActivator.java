@@ -1,4 +1,4 @@
-package org.jee.zoo.rest;
+package org.jee.zoo.animal.rest;
 /*
  * JBoss, Home of Professional Open Source
  * Copyright 2013, Red Hat, Inc. and/or its affiliates, and individual

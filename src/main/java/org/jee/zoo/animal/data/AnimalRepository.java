@@ -1,4 +1,4 @@
-package org.jee.zoo.data;
+package org.jee.zoo.animal.data;
 
 import java.util.List;
 import java.util.logging.Logger;
@@ -10,8 +10,8 @@ import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Root;
 
-import org.jee.zoo.model.Animal;
-import org.jee.zoo.model.AnimalReduced;
+import org.jee.zoo.animal.model.Animal;
+import org.jee.zoo.animal.model.AnimalReduced;
 
 @ApplicationScoped
 public class AnimalRepository implements IAnimalRepository {

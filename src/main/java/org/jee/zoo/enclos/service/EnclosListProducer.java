@@ -1,4 +1,4 @@
-package org.jee.zoo.data;
+package org.jee.zoo.enclos.service;
 
 import java.util.List;
 
@@ -10,7 +10,8 @@ import javax.enterprise.inject.Produces;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import org.jee.zoo.model.Enclos;
+import org.jee.zoo.enclos.data.EnclosRepository;
+import org.jee.zoo.enclos.model.Enclos;
 
 @RequestScoped
 public class EnclosListProducer {

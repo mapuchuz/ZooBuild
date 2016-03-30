@@ -1,9 +1,9 @@
-package org.jee.zoo.data;
+package org.jee.zoo.animal.data;
 
 import java.util.List;
 
-import org.jee.zoo.model.Animal;
-import org.jee.zoo.model.AnimalReduced;
+import org.jee.zoo.animal.model.Animal;
+import org.jee.zoo.animal.model.AnimalReduced;
 
 public interface IAnimalRepository {
 

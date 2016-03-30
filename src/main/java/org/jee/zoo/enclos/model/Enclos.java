@@ -1,4 +1,4 @@
-package org.jee.zoo.model;
+package org.jee.zoo.enclos.model;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

@@ -1,4 +1,4 @@
-package org.jee.zoo.rest;
+package org.jee.zoo.animal.rest;
 /*
  * JBoss, Home of Professional Open Source
  * Copyright 2013, Red Hat, Inc. and/or its affiliates, and individual
@@ -40,10 +40,10 @@ import javax.ws.rs.WebApplicationException;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
-import org.jee.zoo.data.IAnimalRepository;
-import org.jee.zoo.model.Animal;
-import org.jee.zoo.model.AnimalReduced;
-import org.jee.zoo.service.IAnimalRegistration;
+import org.jee.zoo.animal.data.IAnimalRepository;
+import org.jee.zoo.animal.model.Animal;
+import org.jee.zoo.animal.model.AnimalReduced;
+import org.jee.zoo.animal.service.IAnimalRegistration;
 
 /**
  * JAX-RS Example
